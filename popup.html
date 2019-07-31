@@ -1,0 +1,119 @@
+
+<!doctype html>
+<html>
+<style>
+ 
+    body {
+        background-color:  white;
+        margin:0px;    
+        height:130px;
+        width: 165px;
+    }
+    h1 {
+        color: #00bfaf;
+        font-size: 26px;
+        text-align: center;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin-top: 5px;
+        margin-bottom: 13px;
+
+    }
+
+    .container {
+      position: relative;
+      text-align: center;
+      margin-top: -12px;
+    }
+
+    div.active {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: 12px;
+      text-align: center;
+      font-weight: bold;
+      position: absolute;
+      color: whitesmoke;
+      top:25px;
+      width: 100%;
+    }
+    .button1 {
+      background-color: whitesmoke; 
+      color: #00bfaf; 
+      border: 3px solid  #00bfaf;
+      float: left;
+      width: 73px;
+      height: 35px;
+      margin-left: 6px;
+      font-family:  Georgia, 'Times New Roman', Times, serif;
+      font-weight: bold;
+      text-align: center;
+      border-radius: 8px;
+    }
+
+    .button1:hover {
+      background-color:  #00bfaf;
+      color: whitesmoke;
+      font-family:  Georgia, 'Times New Roman', Times, serif;
+      font-weight: bold;
+      text-align: center;
+    }
+    .button2 {
+      background-color: whitesmoke; 
+      color: #00bfaf; 
+      border: 3px solid  #00bfaf;
+      float: right;
+      width: 73px;
+      height: 35px;
+      font-family:  Georgia, 'Times New Roman', Times, serif;
+      font-weight: bold;
+      text-align: center;
+      margin-right: 7px;
+      border-radius: 8px;
+
+    }
+
+    .button2:hover {
+      background-color:  #00bfaf;
+      color: whitesmoke;
+      font-family:  Georgia, 'Times New Roman', Times, serif;
+      font-weight: bold;
+      text-align: center;
+    }
+    div.buttons {
+      width: 100%;
+      text-align: center;
+      font-size: 9px;
+      margin-top: 3px;
+    }
+    .divider{
+    width:5px;
+    height:auto;
+    display:inline-block;
+}
+ 
+    
+</style>
+  <head>
+    <title>Tabber</title>
+    <script 
+    src="mousetrap.js">
+    </script>
+      <script 
+      src="jquery.js">
+      </script>
+    <script 
+    src="popup.js">
+    </script>
+  </head>
+  <body>
+      <h1>Tabber</h1>
+      <div class="container">
+          <img src="tab.png" style="width:100%;">
+          <div class="active"></div>
+      </div>
+      <div class="buttons">
+        <button class="button button1" id="quickKeys">Quick Keys</button>
+        <div class="divider"></div>
+        <button class="button button2" id="options">All Shortcuts</button>
+      </div>    
+  </body>
+</html>
